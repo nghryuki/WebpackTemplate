@@ -1,0 +1,42 @@
+{
+  "name": "web_template",
+  "version": "1.0.0",
+  "description": "web開発汎用テンプレート",
+  "scripts": {
+    "start": "npm run server & npm run watch",
+    "server": "browser-sync start -c ./config/bs-config.js",
+    "watch": "webpack --mode development --config ./config/webpack.config.js -w",
+    "build": "webpack --mode development --config ./config/webpack.config.js",
+    "prod": "webpack --mode production --config ./config/webpack.config.js"
+  },
+  "author": "@nagahora",
+  "license": "MIT",
+  "dependencies": {
+    "dat.gui": "^0.7.2",
+    "three": "^0.96.0",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "browser-sync": "^2.24.7",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^1.0.1",
+    "ejs": "^2.6.1",
+    "ejs-compiled-loader": "^1.1.0",
+    "extract-loader": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-glsl-loader": "^1.0.1"
+  }
+}
